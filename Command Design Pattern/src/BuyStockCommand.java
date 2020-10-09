@@ -1,6 +1,7 @@
 
 public class BuyStockCommand {
 
+	StockTrade stockTrade;
 	String stockName;
 	int shares;
 	
