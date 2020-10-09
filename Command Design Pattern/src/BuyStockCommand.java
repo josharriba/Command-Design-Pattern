@@ -1,15 +1,29 @@
+/* The BuyStockCommand class buys the stocks
+ * @author joshj, OwenB
+ *
+ */
+public class BuyStockCommand implements Command{
 
-public class BuyStockCommand {
+    /* variables
+     */
+    StockTrade stockTrade;
+    String stockName;
+    int shares;
 
-	StockTrade stockTrade;
-	String stockName;
-	int shares;
-	
-	public BuyStockCommand(StockTrade stockTrade, String stockName, int shares) {
-		
-	}
-	
-	public void execute() {
-		
-	}
+    /* constructor sets attributes
+     * @param stockTrade
+     * @param stockName
+     * @param shares
+     */
+    public BuyStockCommand(StockTrade stockTrade, String stockName, int shares) {
+        this.stockTrade = stockTrade;
+        this.stockName = stockName;
+        this.shares = shares;
+    }
+
+    /* the exceute method calls the buy method
+     */
+    public void execute() {
+        stockTrade.buy(stockName, shares);
+    }
 }
