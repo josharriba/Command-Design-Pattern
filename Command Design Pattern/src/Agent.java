@@ -29,6 +29,8 @@ public class Agent {
 	 * the processOrders method loops through the list of and executes each one
 	 */
 	public void processOrders() {
-		
+		for(Command c: orders) {
+			c.execute();
+		}
 	}
 }
