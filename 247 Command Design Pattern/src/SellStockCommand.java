@@ -1,6 +1,10 @@
-
+/**
+ * 
+ * @author carlosangeles
+ *
+ */
 public class SellStockCommand {
-	
+
 	StockTrade stockTrade;
 	String stockName;
 	int shares;
